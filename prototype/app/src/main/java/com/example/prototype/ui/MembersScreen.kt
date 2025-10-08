@@ -15,7 +15,7 @@ fun NameListScreen() {
     var name by rememberSaveable { mutableStateOf("") }
 
 
-    val names = remember { mutableStateListOf<String>() }
+    val names = rememberSaveable { mutableStateListOf<String>() }
 
     Column(
         modifier = Modifier
